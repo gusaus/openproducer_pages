@@ -81,6 +81,52 @@ function openproducer_pages_field_default_field_instances_alter(&$data) {
 function openproducer_pages_panelizer_defaults_override_alter(&$data) {
   if (isset($data['node:panopoly_page:default'])) {
     $data['node:panopoly_page:default']->css_id = 'page'; /* WAS: 'page-page' */
-    $data['node:panopoly_page:default']->display->layout = 'floyd_flipped'; /* WAS: 'bryant' */
+    $data['node:panopoly_page:default']->display->content['new-e9afd358-c44d-4777-b376-0fa0151bc99b'] = (object) array(
+          'pid' => 'new-e9afd358-c44d-4777-b376-0fa0151bc99b',
+          'panel' => 'sidebar',
+          'type' => 'views_panes',
+          'subtype' => 'news-panel_pane_2',
+          'shown' => TRUE,
+          'access' => array(),
+          'configuration' => array(
+            'fields_override' => array(
+              'field_featured_image' => 1,
+              'title' => 1,
+              'body' => 0,
+            ),
+            'override_title' => '',
+            'override_title_text' => '',
+            'override_title_heading' => 'h2',
+            'view_settings' => 'fields',
+            'header_type' => 'none',
+            'view_mode' => 'teaser',
+            'widget_title' => 'Recent News',
+          ),
+          'cache' => array(),
+          'style' => array(
+            'settings' => array(
+              'hide_classes' => array(
+                'hidden-xs' => 0,
+                'hidden-sm' => 0,
+                'hidden-md' => 0,
+                'hidden-lg' => 0,
+              ),
+              'additional_classes' => array(
+                'pull-left' => 0,
+                'pull-right' => 0,
+                'clearfix' => 0,
+              ),
+            ),
+            'style' => 'bootstrap_styles:well',
+          ),
+          'css' => array(),
+          'extras' => array(),
+          'position' => 0,
+          'locks' => array(),
+          'uuid' => 'e9afd358-c44d-4777-b376-0fa0151bc99b',
+        ); /* WAS: '' */
+    $data['node:panopoly_page:default']->display->layout = 'floyd_flipped'; /* WAS: 'radix_bryant' */
+    $data['node:panopoly_page:default']->display->panels['sidebar'][0] = 'new-e9afd358-c44d-4777-b376-0fa0151bc99b'; /* WAS: 'new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1' */
+    unset($data['node:panopoly_page:default']->display->content['new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1']);
   }
 }
