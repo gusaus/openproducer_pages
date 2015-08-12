@@ -81,8 +81,8 @@ function openproducer_pages_field_default_field_instances_alter(&$data) {
 function openproducer_pages_panelizer_defaults_override_alter(&$data) {
   if (isset($data['node:panopoly_page:default'])) {
     $data['node:panopoly_page:default']->css_id = 'page'; /* WAS: 'page-page' */
-    $data['node:panopoly_page:default']->display->content['new-e9afd358-c44d-4777-b376-0fa0151bc99b'] = (object) array(
-          'pid' => 'new-e9afd358-c44d-4777-b376-0fa0151bc99b',
+    $data['node:panopoly_page:default']->display->content['new-3804577c-18ec-4fdf-b9da-62d633cf574a'] = (object) array(
+          'pid' => 'new-3804577c-18ec-4fdf-b9da-62d633cf574a',
           'panel' => 'sidebar',
           'type' => 'views_panes',
           'subtype' => 'news-panel_pane_2',
@@ -105,17 +105,12 @@ function openproducer_pages_panelizer_defaults_override_alter(&$data) {
           'cache' => array(),
           'style' => array(
             'settings' => array(
-              'hide_classes' => array(
-                'hidden-xs' => 0,
-                'hidden-sm' => 0,
-                'hidden-md' => 0,
-                'hidden-lg' => 0,
-              ),
-              'additional_classes' => array(
-                'pull-left' => 0,
-                'pull-right' => 0,
-                'clearfix' => 0,
-              ),
+              'modifier_class' => '',
+              'hide_classes' => array(),
+              'additional_classes' => array(),
+              'collapsible' => FALSE,
+              'collapsed' => '',
+              'region_title' => '',
             ),
             'style' => 'bootstrap_styles:well',
           ),
@@ -123,10 +118,48 @@ function openproducer_pages_panelizer_defaults_override_alter(&$data) {
           'extras' => array(),
           'position' => 0,
           'locks' => array(),
-          'uuid' => 'e9afd358-c44d-4777-b376-0fa0151bc99b',
+          'uuid' => '3804577c-18ec-4fdf-b9da-62d633cf574a',
+        ); /* WAS: '' */
+    $data['node:panopoly_page:default']->display->content['new-71d040a7-03ee-4103-a1da-024f88159824'] = (object) array(
+          'pid' => 'new-71d040a7-03ee-4103-a1da-024f88159824',
+          'panel' => 'sidebar',
+          'type' => 'views_panes',
+          'subtype' => 'albums-panel_pane_2',
+          'shown' => TRUE,
+          'access' => array(),
+          'configuration' => array(
+            'fields_override' => array(
+              'field_artwork' => 1,
+              'title' => 1,
+              'field_artist' => 0,
+            ),
+            'override_title' => '',
+            'override_title_text' => '',
+            'override_title_heading' => 'h2',
+            'view_settings' => 'fields',
+            'header_type' => 'none',
+            'view_mode' => 'teaser',
+            'widget_title' => 'Featured Album',
+          ),
+          'cache' => array(),
+          'style' => array(
+            'settings' => array(
+              'modifier_class' => '',
+              'hide_classes' => array(),
+              'additional_classes' => array(),
+              'collapsible' => FALSE,
+              'collapsed' => '',
+              'region_title' => '',
+            ),
+            'style' => 'bootstrap_styles:well',
+          ),
+          'css' => array(),
+          'extras' => array(),
+          'position' => 1,
+          'locks' => array(),
+          'uuid' => '71d040a7-03ee-4103-a1da-024f88159824',
         ); /* WAS: '' */
     $data['node:panopoly_page:default']->display->layout = 'floyd_flipped'; /* WAS: 'radix_bryant' */
-    $data['node:panopoly_page:default']->display->panels['sidebar'][0] = 'new-e9afd358-c44d-4777-b376-0fa0151bc99b'; /* WAS: 'new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1' */
-    unset($data['node:panopoly_page:default']->display->content['new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1']);
+    $data['node:panopoly_page:default']->display->panels['sidebar'][0] = 'new-3804577c-18ec-4fdf-b9da-62d633cf574a'; /* WAS: 'new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1' */
   }
 }
