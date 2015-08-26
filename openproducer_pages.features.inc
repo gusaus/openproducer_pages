@@ -81,8 +81,8 @@ function openproducer_pages_field_default_field_instances_alter(&$data) {
 function openproducer_pages_panelizer_defaults_override_alter(&$data) {
   if (isset($data['node:panopoly_page:default'])) {
     $data['node:panopoly_page:default']->css_id = 'page'; /* WAS: 'page-page' */
-    $data['node:panopoly_page:default']->display->content['new-3804577c-18ec-4fdf-b9da-62d633cf574a'] = (object) array(
-          'pid' => 'new-3804577c-18ec-4fdf-b9da-62d633cf574a',
+    $data['node:panopoly_page:default']->display->content['new-60459f60-d916-43fb-ac70-9d727534d21f'] = (object) array(
+          'pid' => 'new-60459f60-d916-43fb-ac70-9d727534d21f',
           'panel' => 'sidebar',
           'type' => 'views_panes',
           'subtype' => 'news-panel_pane_2',
@@ -91,8 +91,9 @@ function openproducer_pages_panelizer_defaults_override_alter(&$data) {
           'configuration' => array(
             'fields_override' => array(
               'field_featured_image' => 1,
-              'title' => 1,
+              'title' => 0,
               'body' => 0,
+              'nothing' => 1,
             ),
             'override_title' => '',
             'override_title_text' => '',
@@ -105,12 +106,17 @@ function openproducer_pages_panelizer_defaults_override_alter(&$data) {
           'cache' => array(),
           'style' => array(
             'settings' => array(
-              'modifier_class' => '',
-              'hide_classes' => array(),
-              'additional_classes' => array(),
-              'collapsible' => FALSE,
-              'collapsed' => '',
-              'region_title' => '',
+              'hide_classes' => array(
+                'hidden-xs' => 0,
+                'hidden-sm' => 0,
+                'hidden-md' => 0,
+                'hidden-lg' => 0,
+              ),
+              'additional_classes' => array(
+                'pull-left' => 0,
+                'pull-right' => 0,
+                'clearfix' => 0,
+              ),
             ),
             'style' => 'bootstrap_styles:well',
           ),
@@ -118,20 +124,26 @@ function openproducer_pages_panelizer_defaults_override_alter(&$data) {
           'extras' => array(),
           'position' => 0,
           'locks' => array(),
-          'uuid' => '3804577c-18ec-4fdf-b9da-62d633cf574a',
+          'uuid' => '60459f60-d916-43fb-ac70-9d727534d21f',
         ); /* WAS: '' */
-    $data['node:panopoly_page:default']->display->content['new-71d040a7-03ee-4103-a1da-024f88159824'] = (object) array(
-          'pid' => 'new-71d040a7-03ee-4103-a1da-024f88159824',
+    $data['node:panopoly_page:default']->display->content['new-f279ff6b-eec8-40ca-b0a9-b17d576dcee7'] = (object) array(
+          'pid' => 'new-f279ff6b-eec8-40ca-b0a9-b17d576dcee7',
           'panel' => 'sidebar',
           'type' => 'views_panes',
-          'subtype' => 'albums-panel_pane_2',
+          'subtype' => 'events-panel_pane_3',
           'shown' => TRUE,
           'access' => array(),
           'configuration' => array(
+            'more_link' => 1,
+            'items_per_page' => 3,
             'fields_override' => array(
-              'field_artwork' => 1,
-              'title' => 1,
-              'field_artist' => 0,
+              'field_featured_image' => 1,
+              'title' => 0,
+              'field_event_date' => 0,
+              'field_event_venue' => 0,
+              'field_event_city' => 0,
+              'field_event_state' => 0,
+              'nothing' => 1,
             ),
             'override_title' => '',
             'override_title_text' => '',
@@ -139,17 +151,22 @@ function openproducer_pages_panelizer_defaults_override_alter(&$data) {
             'view_settings' => 'fields',
             'header_type' => 'none',
             'view_mode' => 'teaser',
-            'widget_title' => 'Featured Album',
+            'widget_title' => 'Upcoming Shows',
           ),
           'cache' => array(),
           'style' => array(
             'settings' => array(
-              'modifier_class' => '',
-              'hide_classes' => array(),
-              'additional_classes' => array(),
-              'collapsible' => FALSE,
-              'collapsed' => '',
-              'region_title' => '',
+              'hide_classes' => array(
+                'hidden-xs' => 0,
+                'hidden-sm' => 0,
+                'hidden-md' => 0,
+                'hidden-lg' => 0,
+              ),
+              'additional_classes' => array(
+                'pull-left' => 0,
+                'pull-right' => 0,
+                'clearfix' => 0,
+              ),
             ),
             'style' => 'bootstrap_styles:well',
           ),
@@ -157,9 +174,11 @@ function openproducer_pages_panelizer_defaults_override_alter(&$data) {
           'extras' => array(),
           'position' => 1,
           'locks' => array(),
-          'uuid' => '71d040a7-03ee-4103-a1da-024f88159824',
+          'uuid' => 'f279ff6b-eec8-40ca-b0a9-b17d576dcee7',
         ); /* WAS: '' */
     $data['node:panopoly_page:default']->display->layout = 'floyd_flipped'; /* WAS: 'radix_bryant' */
-    $data['node:panopoly_page:default']->display->panels['sidebar'][0] = 'new-3804577c-18ec-4fdf-b9da-62d633cf574a'; /* WAS: 'new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1' */
+    $data['node:panopoly_page:default']->display->panels['sidebar'][0] = 'new-60459f60-d916-43fb-ac70-9d727534d21f'; /* WAS: 'new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1' */
+    $data['node:panopoly_page:default']->display->panels['sidebar'][1] = 'new-f279ff6b-eec8-40ca-b0a9-b17d576dcee7'; /* WAS: '' */
+    unset($data['node:panopoly_page:default']->display->content['new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1']);
   }
 }

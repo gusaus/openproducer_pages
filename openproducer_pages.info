@@ -22,13 +22,14 @@ features[features_overrides][] = field_instance.node-panopoly_page-field_feature
 features[features_overrides][] = field_instance.node-panopoly_page-field_featured_image.widget|settings|preview_image_style
 features[features_overrides][] = field_instance.node-panopoly_page-field_featured_image.widget|type
 features[features_overrides][] = panelizer_defaults.node:panopoly_page:default.css_id
-features[features_overrides][] = panelizer_defaults.node:panopoly_page:default.display|content|new-3804577c-18ec-4fdf-b9da-62d633cf574a
-features[features_overrides][] = panelizer_defaults.node:panopoly_page:default.display|content|new-71d040a7-03ee-4103-a1da-024f88159824
+features[features_overrides][] = panelizer_defaults.node:panopoly_page:default.display|content|new-60459f60-d916-43fb-ac70-9d727534d21f
+features[features_overrides][] = panelizer_defaults.node:panopoly_page:default.display|content|new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1
+features[features_overrides][] = panelizer_defaults.node:panopoly_page:default.display|content|new-f279ff6b-eec8-40ca-b0a9-b17d576dcee7
 features[features_overrides][] = panelizer_defaults.node:panopoly_page:default.display|layout
 features[features_overrides][] = panelizer_defaults.node:panopoly_page:default.display|panels|sidebar|0
+features[features_overrides][] = panelizer_defaults.node:panopoly_page:default.display|panels|sidebar|1
 features[variable][] = pathauto_node_pattern
 features_exclude[features_overrides][panelizer_defaults.node:panopoly_page:default.display|content|new-18bae4ef-914d-4d9f-baa0-bf3277a27d00] = panelizer_defaults.node:panopoly_page:default.display|content|new-18bae4ef-914d-4d9f-baa0-bf3277a27d00
-features_exclude[features_overrides][panelizer_defaults.node:panopoly_page:default.display|panels|sidebar|1] = panelizer_defaults.node:panopoly_page:default.display|panels|sidebar|1
 features_exclude[features_overrides][panelizer_defaults.node:panopoly_page:default:default.display|content|new-b31fe8ba-6493-4081-937e-eef6ac7a98cf] = panelizer_defaults.node:panopoly_page:default:default.display|content|new-b31fe8ba-6493-4081-937e-eef6ac7a98cf
 features_exclude[features_overrides][panelizer_defaults.node:panopoly_page:default:default.display|content|new-997bc366-0b96-4895-a614-58c73cf3d95e] = panelizer_defaults.node:panopoly_page:default:default.display|content|new-997bc366-0b96-4895-a614-58c73cf3d95e
 features_exclude[features_overrides][panelizer_defaults.node:panopoly_page:default:default.display|content|new-38f25db5-207a-4a6d-9ca5-fc5534131d08] = panelizer_defaults.node:panopoly_page:default:default.display|content|new-38f25db5-207a-4a6d-9ca5-fc5534131d08
@@ -49,6 +50,6 @@ features_exclude[features_overrides][panelizer_defaults.node:panopoly_page:defau
 features_exclude[features_overrides][panelizer_defaults.node:panopoly_page:default.display|content|new-5d2e96ad-9f61-4abb-b9ee-a847bd2fc348] = panelizer_defaults.node:panopoly_page:default.display|content|new-5d2e96ad-9f61-4abb-b9ee-a847bd2fc348
 features_exclude[features_overrides][panelizer_defaults.node:panopoly_page:default.display|content|new-0a2c7b96-5f45-4e85-8e00-88fee50f4f71] = panelizer_defaults.node:panopoly_page:default.display|content|new-0a2c7b96-5f45-4e85-8e00-88fee50f4f71
 
-version = "7.x-1.0-beta25"
+version = "7.x-1.0-beta26"
 core = "7.x"
 project = "openproducer_pages"
